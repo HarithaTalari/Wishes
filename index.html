@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Love Letter</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🎆 Fireworks Canvas -->
+<canvas id="fireworks"></canvas>
+
+<!-- 🎵 Music -->
+<audio id="bgMusic" loop>
+  <source src="intro.mp3.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔒 PASSWORD -->
+<div id="passwordScreen" class="screen password-screen active">
+  <h2>🔒 Enter password</h2>
+  <div id="inputDisplay" class="input-display">••••</div>
+
+  <div class="keypad">
+    <button class="key" onclick="enterDigit('1')">1</button>
+    <button class="key" onclick="enterDigit('2')">2</button>
+    <button class="key" onclick="enterDigit('3')">3</button>
+    <button class="key" onclick="enterDigit('4')">4</button>
+    <button class="key" onclick="enterDigit('5')">5</button>
+    <button class="key" onclick="enterDigit('6')">6</button>
+    <button class="key" onclick="enterDigit('7')">7</button>
+    <button class="key" onclick="enterDigit('8')">8</button>
+    <button class="key" onclick="enterDigit('9')">9</button>
+    <div></div>
+    <button class="key" onclick="enterDigit('0')">0</button>
+  </div>
+</div>
+
+<!-- 💌 LOVE LETTER -->
+<div id="notepadScreen" class="screen">
+  <div class="notepad">
+
+    <h3>📅 24 MARCH 2026</h3>
+    <h4>💌 MY LOVE🥰...</h4>
+
+    <img src="image.png" alt="photo">
+
+    <p id="typingText"></p>
+
+    <button id="proposalBtn">
+      Will you be mine? 💍
+    </button>
+
+  </div>
+</div>
+
+<!-- 💖 POPUP -->
+<div id="popup">
+  <div class="popup-box">
+    <h2>💖 I Love You 💖</h2>
+    <p>You are my forever ♡</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
